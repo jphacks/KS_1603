@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		24BE63BD4CBBEE6106A28CC5 /* Pods_United_PhotogramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1635C03A9ADC9F9609628096 /* Pods_United_PhotogramTests.framework */; };
 		B0783C12D2279782957588E8 /* Pods_United_Photogram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47EBE3FA9580A6176B8F86E /* Pods_United_Photogram.framework */; };
-		E6148D5C1DA659F600FD8F8F /* CameraShootingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D581DA659F600FD8F8F /* CameraShootingScreenViewController.swift */; };
+		E61397C81DBD31F400D062C3 /* CameraShootingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61397C71DBD31F400D062C3 /* CameraShootingScreenViewController.swift */; };
 		E6148D5D1DA659F600FD8F8F /* DisplayShotPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D591DA659F600FD8F8F /* DisplayShotPhotoViewController.swift */; };
 		E6148D5E1DA659F600FD8F8F /* ScreenCombineImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D5A1DA659F600FD8F8F /* ScreenCombineImageViewController.swift */; };
 		E6148D5F1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */; };
@@ -62,7 +62,7 @@
 		B1CDDA7F4F6D319622ABE94C /* Pods-United PhotogramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-United PhotogramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-United PhotogramUITests/Pods-United PhotogramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C47EBE3FA9580A6176B8F86E /* Pods_United_Photogram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_United_Photogram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C920CA2A85ED698D39072705 /* Pods-United Photogram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-United Photogram.release.xcconfig"; path = "Pods/Target Support Files/Pods-United Photogram/Pods-United Photogram.release.xcconfig"; sourceTree = "<group>"; };
-		E6148D581DA659F600FD8F8F /* CameraShootingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraShootingScreenViewController.swift; sourceTree = "<group>"; };
+		E61397C71DBD31F400D062C3 /* CameraShootingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraShootingScreenViewController.swift; sourceTree = "<group>"; };
 		E6148D591DA659F600FD8F8F /* DisplayShotPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayShotPhotoViewController.swift; sourceTree = "<group>"; };
 		E6148D5A1DA659F600FD8F8F /* ScreenCombineImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenCombineImageViewController.swift; sourceTree = "<group>"; };
 		E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenConfirmCombinedPhotoViewController.swift; sourceTree = "<group>"; };
@@ -219,9 +219,9 @@
 				E6148D611DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift */,
 				E61B90AF1D9AD96E00C12BFA /* AlbumTabViewController.swift */,
 				E61B90B01D9AD96E00C12BFA /* CameraTabViewController.swift */,
+				E61397C71DBD31F400D062C3 /* CameraShootingScreenViewController.swift */,
 				E61B90B11D9AD96E00C12BFA /* SettingTabViewController.swift */,
 				E66160611DB7079A006037E6 /* SelectionBackgroundViewController.swift */,
-				E6148D581DA659F600FD8F8F /* CameraShootingScreenViewController.swift */,
 				E6148D591DA659F600FD8F8F /* DisplayShotPhotoViewController.swift */,
 				E6148D5A1DA659F600FD8F8F /* ScreenCombineImageViewController.swift */,
 				E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */,
@@ -590,11 +590,11 @@
 				E6148D5E1DA659F600FD8F8F /* ScreenCombineImageViewController.swift in Sources */,
 				E6148D5F1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift in Sources */,
 				E6C8CD871D8FC6DE00E1BDE5 /* AppDelegate.swift in Sources */,
+				E61397C81DBD31F400D062C3 /* CameraShootingScreenViewController.swift in Sources */,
 				E6C8CD851D8FC6DE00E1BDE5 /* United_PhotogramEnumerations.swift in Sources */,
 				E61B90B31D9AD96E00C12BFA /* CameraTabViewController.swift in Sources */,
 				E6C8CD821D8FC6DE00E1BDE5 /* United_Photogram.swift in Sources */,
 				E6148D621DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift in Sources */,
-				E6148D5C1DA659F600FD8F8F /* CameraShootingScreenViewController.swift in Sources */,
 				E66160621DB7079A006037E6 /* SelectionBackgroundViewController.swift in Sources */,
 				E6148D5D1DA659F600FD8F8F /* DisplayShotPhotoViewController.swift in Sources */,
 				E66160581DAE5A58006037E6 /* AlertDisplay.swift in Sources */,

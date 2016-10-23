@@ -4,9 +4,8 @@ import UIKit
 
 class CameraTabViewController: UIViewController{
     
-    //次へボタンを押された時の動作。背景画像の保存
-    @IBAction func NextButton(sender: AnyObject) {
-    }
+    
+    
     
     @IBOutlet weak var containerView: UIView!
     weak var currentViewController: UIViewController?
