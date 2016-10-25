@@ -18,16 +18,17 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
     let BackgroundPhoto = UIImage(named: "dog.jpg")
     
     @IBAction func ShootingPhotoButton(sender: AnyObject) {
-        let picker = UIImagePickerController()
-        picker.sourceType = UIImagePickerControllerSourceType.Camera
-        picker.delegate = self
-        presentViewController(picker, animated: true, completion: nil)
+//        let picker = UIImagePickerController()
+//        picker.sourceType = UIImagePickerControllerSourceType.Camera
+//        picker.delegate = self
+//        presentViewController(picker, animated: true, completion: nil)
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-          }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,10 +41,10 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
         }
     
         
-        CameraScreenImageView.image = image
-        CameraScreenImageView.addSubview(UIImageView(image: BackgroundPhoto))
+    CameraScreenImageView.image = image
+    CameraScreenImageView.addSubview(UIImageView(image: BackgroundPhoto))
         
-        //----合成した画像を保存
+    //----合成した画像を保存
         
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -57,6 +58,12 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
     func senderMessage(sender: AnyObject){
         delegate?.receiveMessage(Message)
         delegate?.optionalReceiveMessage!(optMessage)
+    }
+    
+    //次の画面に送る
+    func goNextViewController() {
+        let next: AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("ScreenConfirmCombinedPhoto")
+        self.presentViewController(next as! UIViewController, animated: true, completion: nil)
     }
 
 }

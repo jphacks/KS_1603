@@ -65,5 +65,9 @@ class ScreenConfirmCombinedPhotoViewController: UIViewController,senderDelegate{
 //            AlertDisplay.showAlertForCompleteSavingPhoto("写真保存の失敗", message: "写真の保存が正常にできませんでした。やりなおしますか", targetVC: self)
 //        }
     }
+    
+    func goBackViewController() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
