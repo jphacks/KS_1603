@@ -90,13 +90,12 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
 //    
     
     
-    func imagePickerController(imagePicker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             CameraScreenImageView.contentMode = .ScaleAspectFit
             CameraScreenImageView.image = pickedImage
         }
-        
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
