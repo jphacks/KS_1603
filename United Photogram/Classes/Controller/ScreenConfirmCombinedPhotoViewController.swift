@@ -1,7 +1,7 @@
 
 import UIKit
 
-class ScreenConfirmCombinedPhotoViewController: UIViewController,senderDelegate{
+class ScreenConfirmCombinedPhotoViewController: UIViewController{
     
     @IBOutlet weak var imagePic: UIImageView!
     
@@ -20,12 +20,12 @@ class ScreenConfirmCombinedPhotoViewController: UIViewController,senderDelegate{
     }
     
     //----データ受け渡しのテスト：受け取る方
-    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        if sender?.identifier == "camareSegue" {
-            let senderViewController: CameraShootingScreenViewController = segue.destinationViewController as! CameraShootingScreenViewController
-            senderViewController.delegate = self
-        }
-    }
+//    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if sender?.identifier == "camareSegue" {
+//            let senderViewController: CameraShootingScreenViewController = segue.destinationViewController as! CameraShootingScreenViewController
+//                senderViewController.delete(self)
+//        }
+//    }
 
     func receiveMessage(message: NSString) {
         print(message)

@@ -5,26 +5,74 @@ import UIKit
 
 
 //データの受け渡しのテスト:渡す方
-@objc protocol senderDelegate{
-    func receiveMessage(message: NSString)
-    optional func optionalReceiveMessage(message: NSString)
-}
+//@objc protocol senderDelegate{
+//    func receiveMessage(message: NSString)
+//    optional func optionalReceiveMessage(message: NSString)
+//}
 
 class CameraShootingScreenViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var CameraScreenImageView: UIImageView!
     
+    @IBOutlet weak var CameraStart: UIButton!
+    @IBOutlet weak var SavePic: UIButton!
+    @IBOutlet weak var Album: UIButton!
     
     let BackgroundPhoto = UIImage(named: "dog.jpg")
     
-    @IBAction func ShootingPhotoButton(sender: AnyObject) {
+//    @IBAction func ShootingPhotoButton(sender: AnyObject) {
 //        let picker = UIImagePickerController()
 //        picker.sourceType = UIImagePickerControllerSourceType.Camera
 //        picker.delegate = self
 //        presentViewController(picker, animated: true, completion: nil)
+//        
+//    }
+    
+    
+    @IBAction func cameraStart(sender: AnyObject) {
+        let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.Camera
+        // カメラが利用可能かチェック
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
+            // インスタンスの作成
+            let cameraPicker = UIImagePickerController()
+            cameraPicker.sourceType = sourceType
+            cameraPicker.delegate = self
+            self.presentViewController(cameraPicker, animated: true, completion: nil)
+            //present(cameraPicker, animated: true, completion: nil)
+            
+        }
+        else{
+        }
+    }
+    //保存
+    @IBAction func savePic(sender: AnyObject) {
+        let timage:UIImage! = CameraScreenImageView.image
         
+        if timage != nil {
+            UIImageWriteToSavedPhotosAlbum(timage, self, #selector(self.imagePickerControllerDidCancel(_:)), nil)
+        }
+        else{
+           
+        }
     }
     
+    @IBAction func showAlbum(sender: AnyObject) {
+        let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
+            // インスタンスの作成
+            let cameraPicker = UIImagePickerController()
+            cameraPicker.sourceType = sourceType
+            cameraPicker.delegate = self
+            self.presentViewController(cameraPicker, animated: true, completion: nil)
+            //present(cameraPicker, animated: true, completion: nil)
+            
+        }
+        else{
+            
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,37 +82,58 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
         // Dispose of any resources that can be recreated.
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickerImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        let BackgroundPhotoViews = CameraScreenImageView.subviews
-        for BackgroundPhotoView in BackgroundPhotoViews {
-            BackgroundPhotoView.removeFromSuperview()
-        }
+//    func imagePickerController(picker: UIImagePickerController, didFinishPickerImage image: UIImage, editingInfo: [String : AnyObject]?) {
+//        let BackgroundPhotoViews = CameraScreenImageView.subviews
+//        for BackgroundPhotoView in BackgroundPhotoViews {
+//            BackgroundPhotoView.removeFromSuperview()
+//        }
+//    
     
+    
+    func imagePickerController(imagePicker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-    CameraScreenImageView.image = image
-    CameraScreenImageView.addSubview(UIImageView(image: BackgroundPhoto))
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            CameraScreenImageView.contentMode = .ScaleAspectFit
+            CameraScreenImageView.image = pickedImage
+        }
         
-    //----合成した画像を保存
-        
-        
-        dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+//    CameraScreenImageView.image = image
+//    CameraScreenImageView.addSubview(UIImageView(image: BackgroundPhoto))
+        
+        func image(image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutablePointer<Void>) {
+            print("1")
+            
+            if error != nil {
+                print(error.code)
+            }
+            else{
+            }
+        }
+        
+        //dismissViewControllerAnimated(true, completion: nil)
+
     
     //---データの受け渡しにテスト
-    weak var delegate: senderDelegate?
-    let Message: NSString = "you got a message"
-    let optMessage: NSString = "you got a optional message"
-    
-    func senderMessage(sender: AnyObject){
-        delegate?.receiveMessage(Message)
-        delegate?.optionalReceiveMessage!(optMessage)
-    }
+//    weak var delegate: senderDelegate?
+//    let Message: NSString = "you got a message"
+//    let optMessage: NSString = "you got a optional message"
+//
+//    func senderMessage(sender: AnyObject){
+//        delegate?.receiveMessage(Message)
+//        delegate?.optionalReceiveMessage!(optMessage)
+//    }
     
     //次の画面に送る
-    func goNextViewController() {
-        let next: AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("ScreenConfirmCombinedPhoto")
-        self.presentViewController(next as! UIViewController, animated: true, completion: nil)
-    }
+//    func goNextViewController() {
+//        let next: AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("ScreenConfirmCombinedPhoto")
+//        self.presentViewController(next as! UIViewController, animated: true, completion: nil)
+//    }
 
 }
-
