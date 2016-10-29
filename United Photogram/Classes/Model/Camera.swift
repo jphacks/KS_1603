@@ -30,7 +30,7 @@ class PhotosFromALbum: AnyObject {
     //------画像を表示する
      func showPhotos(){
     let manager: PHImageManager = PHImageManager()
-    manager.requestImageForAsset(asset,
+    manager.requestImageForAsset(assets,
     targetSize: CGSizeMake(70, 70),
     contentMode: .AspectFill,
     options: nil) { (image, info) -> Void in
