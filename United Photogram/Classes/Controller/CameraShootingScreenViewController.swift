@@ -34,6 +34,7 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
         let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.Camera
         
         //-1-- カメラが利用可能かチェック
+        //-----これはカメラに変更する
         var status = PHPhotoLibrary.authorizationStatus()
             //AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
             //[ALAssetsLibrary.authorizationStatus];
