@@ -15,13 +15,13 @@
 		E6148D5F1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */; };
 		E6148D621DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D601DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift */; };
 		E6148D631DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D611DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift */; };
+		E618C7831DC49ABB00BC6BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E618C7821DC49ABB00BC6BCA /* Main.storyboard */; };
 		E618FBCF1DC30981001FD4F9 /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618FBCE1DC30981001FD4F9 /* AlertUtility.swift */; };
 		E618FBD21DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618FBD01DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift */; };
 		E618FBD31DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618FBD11DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift */; };
 		E61B90B21D9AD96E00C12BFA /* AlbumTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B90AF1D9AD96E00C12BFA /* AlbumTabViewController.swift */; };
 		E61B90B31D9AD96E00C12BFA /* CameraTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B90B01D9AD96E00C12BFA /* CameraTabViewController.swift */; };
 		E61B90B41D9AD96E00C12BFA /* SettingTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B90B11D9AD96E00C12BFA /* SettingTabViewController.swift */; };
-		E61B90B81D9EF91400C12BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61B90B71D9EF91400C12BFA /* Main.storyboard */; };
 		E66160581DAE5A58006037E6 /* AlertDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66160551DAE5A58006037E6 /* AlertDisplay.swift */; };
 		E66160591DAE5A58006037E6 /* AlertGetPermit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66160561DAE5A58006037E6 /* AlertGetPermit.swift */; };
 		E661605A1DAE5A58006037E6 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66160571DAE5A58006037E6 /* Camera.swift */; };
@@ -71,13 +71,13 @@
 		E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenConfirmCombinedPhotoViewController.swift; sourceTree = "<group>"; };
 		E6148D601DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBackgroundPhotoFromAlbumViewController.swift; sourceTree = "<group>"; };
 		E6148D611DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBackgroundPhotoFromMapViewController.swift; sourceTree = "<group>"; };
+		E618C7821DC49ABB00BC6BCA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E618FBCE1DC30981001FD4F9 /* AlertUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
 		E618FBD01DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALAssetsLibraryAuthorizationProtocol.swift; sourceTree = "<group>"; };
 		E618FBD11DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureDeviceAuthorizationProtocol.swift; sourceTree = "<group>"; };
 		E61B90AF1D9AD96E00C12BFA /* AlbumTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTabViewController.swift; sourceTree = "<group>"; };
 		E61B90B01D9AD96E00C12BFA /* CameraTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTabViewController.swift; sourceTree = "<group>"; };
 		E61B90B11D9AD96E00C12BFA /* SettingTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTabViewController.swift; sourceTree = "<group>"; };
-		E61B90B71D9EF91400C12BFA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		E66160551DAE5A58006037E6 /* AlertDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDisplay.swift; sourceTree = "<group>"; };
 		E66160561DAE5A58006037E6 /* AlertGetPermit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertGetPermit.swift; sourceTree = "<group>"; };
 		E66160571DAE5A58006037E6 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
@@ -212,8 +212,8 @@
 		E6C8CD771D8FC6DE00E1BDE5 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				E61B90B71D9EF91400C12BFA /* Main.storyboard */,
 				E6C8CD781D8FC6DE00E1BDE5 /* LaunchScreen.storyboard */,
+				E618C7821DC49ABB00BC6BCA /* Main.storyboard */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -430,7 +430,7 @@
 				E6C8CD791D8FC6DE00E1BDE5 /* LaunchScreen.storyboard in Resources */,
 				E6C8CD761D8FC6DE00E1BDE5 /* setup.sh in Resources */,
 				E6C8CD721D8FC6DE00E1BDE5 /* Assets.xcassets in Resources */,
-				E61B90B81D9EF91400C12BFA /* Main.storyboard in Resources */,
+				E618C7831DC49ABB00BC6BCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

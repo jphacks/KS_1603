@@ -21,37 +21,24 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
     
     let BackgroundPhoto = UIImage(named: "dog.jpg")
     
-//    @IBAction func ShootingPhotoButton(sender: AnyObject) {
-//        let picker = UIImagePickerController()
-//        picker.sourceType = UIImagePickerControllerSourceType.Camera
-//        picker.delegate = self
-//        presentViewController(picker, animated: true, completion: nil)
-//        
-//    }
-    
-    
-    @IBAction func cameraStart(sender: AnyObject) {
-        let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.Camera
-        
+    @IBAction func bootCamera(sender: AnyObject) {
         //-1-- カメラが利用可能かチェック
-        //-----これはカメラに変更する
-        var status = PHPhotoLibrary.authorizationStatus()
-            //AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
-            //[ALAssetsLibrary.authorizationStatus];
+        let status = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
         
         switch (status) {
         case .Authorized:
-            // 写真へのアクセスが許可されている状態
-            //----写真の起動を行う
-
+            // カメラへのアクセスが許可されている状態
+            //カメラ起動
+            openCamera()
             break
         case .NotDetermined:
-                // 初回起動時に許可設定を促すダイアログが表示される
-                PHPhotoLibrary.requestAuthorization({ status in
-                    if status == .Authorized {
-                        //do something
-                    }
-                })
+            // 初回起動時に許可設定を促すダイアログが表示される
+            AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo, completionHandler: { (granded) in
+                if granded == true{
+                    //カメラ起動
+                    self.openCamera()
+                }
+            })
             break
         case .Denied:
             // プライバシーで許可されていない状態
@@ -62,16 +49,37 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
             // 機能制限されている場合
             break
         }
-        
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
-            // インスタンスの作成
-            let cameraPicker = UIImagePickerController()
-            cameraPicker.sourceType = sourceType
-            cameraPicker.delegate = self
-            self.presentViewController(cameraPicker, animated: true, completion: nil)
-            //present(cameraPicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func cameraaaStart(sender: AnyObject) {
+        //-1-- カメラが利用可能かチェック
+        let status = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
+    
+        switch (status) {
+        case .Authorized:
+            // カメラへのアクセスが許可されている状態
+            //カメラ起動
+            openCamera()
+            break
+        case .NotDetermined:
+            // 初回起動時に許可設定を促すダイアログが表示される
+            AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo, completionHandler: { (granded) in
+                if granded == true{
+                    //カメラ起動
+                    self.openCamera()
+                }
+            })
+                break
+        case .Denied:
+            // プライバシーで許可されていない状態
+            //---urlで設定画面に飛べるかask
             
+            break
+        case .Restricted:
+            // 機能制限されている場合
+            break
         }
+        
         
          func showCamereAlert(viewController: UIViewController) {
             let okButtonHandler = { (action: UIAlertAction) -> () in
@@ -85,6 +93,15 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
     }
     
     
+    private func openCamera(){
+    if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+    let imagePicker = UIImagePickerController()
+    imagePicker.delegate = self
+    imagePicker.sourceType = UIImagePickerControllerSourceType.Camera;
+    imagePicker.allowsEditing = false
+    self.presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    }
     //保存
     @IBAction func savePic(sender: AnyObject) {
         let timage:UIImage! = CameraScreenImageView.image
@@ -159,6 +176,22 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
         
         //dismissViewControllerAnimated(true, completion: nil)
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     //---データの受け渡しにテスト
 //    weak var delegate: senderDelegate?

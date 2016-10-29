@@ -47,21 +47,22 @@ class ChooseBackgroundPhotoFromAlbumViewController: UIViewController, UICollecti
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photoAssets.count
+        return 30
+            //photoAssets.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("AlbumCell", forIndexPath: indexPath) as UICollectionViewCell
-        
-        let asset = photoAssets[indexPath.row]
-        let imageView = cell.viewWithTag(1) as! UIImageView
-        let manager: PHImageManager = PHImageManager()
-        manager.requestImageForAsset(asset,
-                                     targetSize: imageView.frame.size,
-                                     contentMode: .AspectFill,
-                                     options: nil) { (image, info) -> Void in
-                                        imageView.image = image
-        }
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("AlbumCell", forIndexPath: indexPath)
+//        let asset = photoAssets[]
+//        let imageView = cell.viewWithTag(1) as! UIImageView
+//        
+//        let manager: PHImageManager = PHImageManager()
+//        manager.requestImageForAsset(asset,
+//                                     targetSize: imageView.frame.size,
+//                                     contentMode: .AspectFill,
+//                                     options: nil) { (image, info) -> Void in
+//                                        imageView.image = image
+//        }
         
         return cell
     }
@@ -70,18 +71,18 @@ class ChooseBackgroundPhotoFromAlbumViewController: UIViewController, UICollecti
 
     
     private func getAllPhotosInfo() {
-        photoAssets = []
-        
-        let options = PHFetchOptions()
-        options.sortDescriptors = [
-            NSSortDescriptor(key: "creationDate", ascending: false)
-        ]
-        
-        let assets: PHFetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: options)
-        assets.enumerateObjectsUsingBlock { (asset, index, stop) -> Void in
-            self.photoAssets.append(asset as! PHAsset)
-        }
-        print(photoAssets)
+//        photoAssets = []
+//        let options = PHFetchOptions()
+//        options.sortDescriptors = [
+//            NSSortDescriptor(key: "creationDate", ascending: false)
+//        ]
+//        
+//        let assets: PHFetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: options)
+//        assets.enumerateObjectsUsingBlock { (asset, index, stop) -> Void in
+//            self.photoAssets.append(asset as! PHAsset)
+//        }
+//        print(photoAssets)
+//    }
     }
 }
 

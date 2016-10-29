@@ -22,7 +22,8 @@ extension ALAssetsLibraryAuthorizationProtocol {
             ALAssetsLibrary().enumerateGroupsWithTypes(ALAssetsGroupAll, usingBlock: { (_, _) -> () in
                 successHandler()
                 }, failureBlock: { (error: NSError?) -> () in
-                    // ※1
+                    //----
+                    
                     AlertUtility.showErrorAlert(error, viewController: viewController)
             })
         }
