@@ -7,6 +7,7 @@ target 'United Photogram' do
 
   # Pods for United Photogram
 pod 'GoogleMaps'
+pod 'OpenCV'
 
   target 'United PhotogramTests' do
     inherit! :search_paths

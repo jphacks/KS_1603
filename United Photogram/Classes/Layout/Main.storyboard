@@ -335,7 +335,7 @@
                                 <frame key="frameInset" minY="104" width="375" height="514"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="RAr-qs-cKB" kind="embed" id="h1e-4V-oYy"/>
+                                    <segue destination="kgd-su-i6Y" kind="embed" id="Auc-R8-9Us"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -361,7 +361,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yqG-zR-UfZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4Ek-na-ABg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="514"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-6r-0ab">
@@ -404,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfl-Lk-vBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1228" y="3611.6941529235387"/>
+            <point key="canvasLocation" x="975" y="3682"/>
         </scene>
         <!--Choose Background Photo From Map View Controller-->
         <scene sceneID="HJL-fO-ZA0">
@@ -415,7 +415,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Cmn-Ah-YAN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ylX-Ic-dgS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="514"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAz-Gl-gi9">
@@ -554,7 +554,7 @@
         <image name="tabBarItemForAlbumVC" width="8" height="8"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PQ4-XT-GXS"/>
+        <segue reference="wjy-1e-t0N"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.70980392160000005" green="0.16078431369999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
