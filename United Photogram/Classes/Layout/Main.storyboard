@@ -350,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhg-eW-hvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048.8" y="2861.9190404797605"/>
+            <point key="canvasLocation" x="358" y="3214"/>
         </scene>
         <!--Choose Background Photo From Album View Controller-->
         <scene sceneID="ghQ-wZ-Zb8">
