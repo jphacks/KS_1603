@@ -15,6 +15,9 @@
 		E6148D5F1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */; };
 		E6148D621DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D601DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift */; };
 		E6148D631DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D611DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift */; };
+		E618FBCF1DC30981001FD4F9 /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618FBCE1DC30981001FD4F9 /* AlertUtility.swift */; };
+		E618FBD21DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618FBD01DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift */; };
+		E618FBD31DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618FBD11DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift */; };
 		E61B90B21D9AD96E00C12BFA /* AlbumTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B90AF1D9AD96E00C12BFA /* AlbumTabViewController.swift */; };
 		E61B90B31D9AD96E00C12BFA /* CameraTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B90B01D9AD96E00C12BFA /* CameraTabViewController.swift */; };
 		E61B90B41D9AD96E00C12BFA /* SettingTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B90B11D9AD96E00C12BFA /* SettingTabViewController.swift */; };
@@ -68,6 +71,9 @@
 		E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenConfirmCombinedPhotoViewController.swift; sourceTree = "<group>"; };
 		E6148D601DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBackgroundPhotoFromAlbumViewController.swift; sourceTree = "<group>"; };
 		E6148D611DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBackgroundPhotoFromMapViewController.swift; sourceTree = "<group>"; };
+		E618FBCE1DC30981001FD4F9 /* AlertUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
+		E618FBD01DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALAssetsLibraryAuthorizationProtocol.swift; sourceTree = "<group>"; };
+		E618FBD11DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureDeviceAuthorizationProtocol.swift; sourceTree = "<group>"; };
 		E61B90AF1D9AD96E00C12BFA /* AlbumTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTabViewController.swift; sourceTree = "<group>"; };
 		E61B90B01D9AD96E00C12BFA /* CameraTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraTabViewController.swift; sourceTree = "<group>"; };
 		E61B90B11D9AD96E00C12BFA /* SettingTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTabViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +273,9 @@
 		E6C8CD831D8FC6DE00E1BDE5 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E618FBD01DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift */,
+				E618FBD11DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift */,
+				E618FBCE1DC30981001FD4F9 /* AlertUtility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -589,17 +598,20 @@
 				E66160591DAE5A58006037E6 /* AlertGetPermit.swift in Sources */,
 				E6148D5E1DA659F600FD8F8F /* ScreenCombineImageViewController.swift in Sources */,
 				E6148D5F1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift in Sources */,
+				E618FBCF1DC30981001FD4F9 /* AlertUtility.swift in Sources */,
 				E6C8CD871D8FC6DE00E1BDE5 /* AppDelegate.swift in Sources */,
 				E61397C81DBD31F400D062C3 /* CameraShootingScreenViewController.swift in Sources */,
 				E6C8CD851D8FC6DE00E1BDE5 /* United_PhotogramEnumerations.swift in Sources */,
 				E61B90B31D9AD96E00C12BFA /* CameraTabViewController.swift in Sources */,
 				E6C8CD821D8FC6DE00E1BDE5 /* United_Photogram.swift in Sources */,
+				E618FBD21DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift in Sources */,
 				E6148D621DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift in Sources */,
 				E66160621DB7079A006037E6 /* SelectionBackgroundViewController.swift in Sources */,
 				E6148D5D1DA659F600FD8F8F /* DisplayShotPhotoViewController.swift in Sources */,
 				E66160581DAE5A58006037E6 /* AlertDisplay.swift in Sources */,
 				E61B90B21D9AD96E00C12BFA /* AlbumTabViewController.swift in Sources */,
 				E6148D631DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift in Sources */,
+				E618FBD31DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

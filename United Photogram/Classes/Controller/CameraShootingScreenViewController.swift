@@ -1,6 +1,7 @@
 import UIKit
-
-
+import AVFoundation
+import AssetsLibrary
+import Photos
 //カメラで撮影をする画面
 
 
@@ -31,7 +32,42 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
     
     @IBAction func cameraStart(sender: AnyObject) {
         let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.Camera
-        // カメラが利用可能かチェック
+        
+        //-1-- カメラが利用可能かチェック
+        var status = PHPhotoLibrary.authorizationStatus()
+            //AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
+            //[ALAssetsLibrary.authorizationStatus];
+        
+        switch (status) {
+        case .Authorized:
+            // 写真へのアクセスが許可されている状態
+            break;
+        case .NotDetermined:
+                // 初回起動時に許可設定を促すダイアログが表示される
+                *library = [[ALAssetsLibrary alloc] init]
+                [library enumerateGroupsWithTypes:ALAssetsGroupAll
+                usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+                // 許可された場合
+                dispatch_async(dispatch_get_main_queue(), ^{
+                // do something
+                });
+                }
+                failureBlock:^(NSError *error) {
+                // 許可してもらえない場合
+                dispatch_async(dispatch_get_main_queue(), ^{
+                });
+                }];
+            break;
+        case .Denied:
+            // プライバシーで許可されていない状態
+            break;
+        case .Restricted:
+            // 機能制限されている場合
+            break;
+        default:
+            break;
+        }
+        
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
             // インスタンスの作成
             let cameraPicker = UIImagePickerController()
@@ -41,9 +77,18 @@ class CameraShootingScreenViewController: UIViewController, UIImagePickerControl
             //present(cameraPicker, animated: true, completion: nil)
             
         }
-        else{
+        
+         func showCamereAlert(viewController: UIViewController) {
+            let okButtonHandler = { (action: UIAlertAction) -> () in
+                if let url = NSURL(string: UIApplicationOpenSettingsURLString) {
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            }
+            // AlertUtility は独自に作成したアラート表示用の便利クラスです。クラスの内容については後述しています。
+            AlertUtility.showAlert("アクセス許可設定", message: "カメラへのアクセスを許可してください", okButtonTitle: "設定する", okButtonHandler: okButtonHandler, cancelButtonTitle: "キャンセル", cancelButtonHandler: nil, viewController: viewController)
         }
     }
+    
     //保存
     @IBAction func savePic(sender: AnyObject) {
         let timage:UIImage! = CameraScreenImageView.image
