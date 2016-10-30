@@ -36,6 +36,7 @@
 		E6C8CD9D1D8FC6DF00E1BDE5 /* United_PhotogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8CD9C1D8FC6DF00E1BDE5 /* United_PhotogramUITests.swift */; };
 		E6C8CDAB1D901FB100E1BDE5 /* FXForms-master in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */; };
 		E6C9EDBF1DC59B6E007E973D /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C9EDBE1DC59B6E007E973D /* dog2.png */; };
+		E6C9EDC71DC5A5CE007E973D /* IMG_6671.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */; };
 		F02239E0964A1964BA2B6B62 /* Pods_United_PhotogramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E2E03B4BCE4644E78FA8C /* Pods_United_PhotogramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		E6C8CD9E1D8FC6DF00E1BDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FXForms-master"; sourceTree = "<group>"; };
 		E6C9EDBE1DC59B6E007E973D /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
+		E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6671.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		E6C8CD6E1D8FC6DE00E1BDE5 /* United Photogram */ = {
 			isa = PBXGroup;
 			children = (
+				E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */,
 				E6C9EDBE1DC59B6E007E973D /* dog2.png */,
 				E6C8CD731D8FC6DE00E1BDE5 /* Classes */,
 				E6C8CD6F1D8FC6DE00E1BDE5 /* Resources */,
@@ -433,6 +436,7 @@
 				E6C8CD791D8FC6DE00E1BDE5 /* LaunchScreen.storyboard in Resources */,
 				E6C8CD761D8FC6DE00E1BDE5 /* setup.sh in Resources */,
 				E6C8CD721D8FC6DE00E1BDE5 /* Assets.xcassets in Resources */,
+				E6C9EDC71DC5A5CE007E973D /* IMG_6671.png in Resources */,
 				E618C7831DC49ABB00BC6BCA /* Main.storyboard in Resources */,
 				E6C9EDBF1DC59B6E007E973D /* dog2.png in Resources */,
 			);

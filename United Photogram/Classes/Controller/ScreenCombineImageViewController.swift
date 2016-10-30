@@ -6,7 +6,8 @@ import UIKit
 class ScreenCombineImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var cameraImgView: UIImageView!
-     let stamp = UIImage(named: "dog2.png")
+     let stamp = UIImage(named: "IMG_6671.png")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,8 +18,12 @@ class ScreenCombineImageViewController: UIViewController, UIImagePickerControlle
     }
 
     @IBAction func btnPushed(sender: AnyObject) {
+        
         let picker = UIImagePickerController()
         picker.sourceType = UIImagePickerControllerSourceType.Camera
+        let backgroundImageView = UIImageView(image: stamp)
+        backgroundImageView.alpha = 0.5
+        picker.cameraOverlayView = backgroundImageView
         picker.delegate = self
         presentViewController(picker, animated: true, completion: nil)
     }
@@ -30,7 +35,10 @@ class ScreenCombineImageViewController: UIViewController, UIImagePickerControlle
             stampView.removeFromSuperview()                     // スタンプをリセットする
         }
         cameraImgView.image = image                             // 撮影した画像をセットする
-        cameraImgView.addSubview(UIImageView(image: stamp))     // スタンプ画像を合成する
+        let haikei = UIImageView(image: stamp)
+        haikei.alpha = 0.5
+        cameraImgView.addSubview(haikei)
+        // スタンプ画像を合成する
 
         // ----- 合成した画像を保存する
         UIGraphicsBeginImageContext(cameraImgView.bounds.size)
