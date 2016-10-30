@@ -26,6 +26,7 @@
 		E66160591DAE5A58006037E6 /* AlertGetPermit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66160561DAE5A58006037E6 /* AlertGetPermit.swift */; };
 		E661605A1DAE5A58006037E6 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66160571DAE5A58006037E6 /* Camera.swift */; };
 		E66160621DB7079A006037E6 /* SelectionBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66160611DB7079A006037E6 /* SelectionBackgroundViewController.swift */; };
+		E6C84BBE1DC5B00000966CEB /* IMG_6877.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E6C84BBD1DC5B00000966CEB /* IMG_6877.JPG */; };
 		E6C8CD721D8FC6DE00E1BDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C8CD711D8FC6DE00E1BDE5 /* Assets.xcassets */; };
 		E6C8CD761D8FC6DE00E1BDE5 /* setup.sh in Resources */ = {isa = PBXBuildFile; fileRef = E6C8CD751D8FC6DE00E1BDE5 /* setup.sh */; };
 		E6C8CD791D8FC6DE00E1BDE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C8CD781D8FC6DE00E1BDE5 /* LaunchScreen.storyboard */; };
@@ -84,6 +85,7 @@
 		E66160561DAE5A58006037E6 /* AlertGetPermit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertGetPermit.swift; sourceTree = "<group>"; };
 		E66160571DAE5A58006037E6 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		E66160611DB7079A006037E6 /* SelectionBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionBackgroundViewController.swift; sourceTree = "<group>"; };
+		E6C84BBD1DC5B00000966CEB /* IMG_6877.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_6877.JPG; sourceTree = "<group>"; };
 		E6C8CD6C1D8FC6DE00E1BDE5 /* United Photogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "United Photogram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C8CD711D8FC6DE00E1BDE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C8CD751D8FC6DE00E1BDE5 /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		E6C8CD6E1D8FC6DE00E1BDE5 /* United Photogram */ = {
 			isa = PBXGroup;
 			children = (
+				E6C84BBD1DC5B00000966CEB /* IMG_6877.JPG */,
 				E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */,
 				E6C9EDBE1DC59B6E007E973D /* dog2.png */,
 				E6C8CD731D8FC6DE00E1BDE5 /* Classes */,
@@ -434,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C8CD791D8FC6DE00E1BDE5 /* LaunchScreen.storyboard in Resources */,
+				E6C84BBE1DC5B00000966CEB /* IMG_6877.JPG in Resources */,
 				E6C8CD761D8FC6DE00E1BDE5 /* setup.sh in Resources */,
 				E6C8CD721D8FC6DE00E1BDE5 /* Assets.xcassets in Resources */,
 				E6C9EDC71DC5A5CE007E973D /* IMG_6671.png in Resources */,

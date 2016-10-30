@@ -6,7 +6,7 @@ import UIKit
 class ScreenCombineImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var cameraImgView: UIImageView!
-     let stamp = UIImage(named: "IMG_6671.png")
+     let stamp = UIImage(named: "IMG_6877.JPG")
     
     override func viewDidLoad() {
         super.viewDidLoad()

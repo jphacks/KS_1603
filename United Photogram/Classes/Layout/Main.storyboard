@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="62n-d9-uVT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ef2-qz-sMH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -53,7 +53,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nYB-nN-vYq" id="dgW-Yb-pYL">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -111,7 +111,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="ASw-by-V16" kind="presentation" id="3TG-c1-Qfe"/>
+                                            <segue destination="62n-d9-uVT" kind="presentation" id="qaj-Ro-Mew"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-hB-Fnx">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99j-Mn-LGv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2578" y="2487"/>
+            <point key="canvasLocation" x="1612" y="2963"/>
         </scene>
         <!--Camera Shooting Screen View Controller-->
         <scene sceneID="cin-DY-5su">
@@ -157,9 +157,6 @@
                                 <frame key="frameInset" minX="16" minY="624" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="キャンセル"/>
-                                <connections>
-                                    <segue destination="JoZ-NW-0Oq" kind="presentation" id="PQ4-XT-GXS"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWZ-tK-bQw">
                                 <frame key="frameInset" minX="149" minY="624" width="34" height="30"/>
@@ -209,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AED-ed-aK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3288.8000000000002" y="2485.9070464767619"/>
+            <point key="canvasLocation" x="5890" y="2552"/>
         </scene>
         <!--Screen Combine Image View Controller-->
         <scene sceneID="lTi-aR-TOf">
@@ -283,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="On7-VN-pCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4546" y="2486"/>
+            <point key="canvasLocation" x="3580" y="2962"/>
         </scene>
         <!--Screen Combine Image View Controller-->
         <scene sceneID="9cg-mI-pWU">
@@ -309,6 +306,16 @@
                                     <action selector="btnPushed:" destination="62n-d9-uVT" eventType="touchUpInside" id="TSJ-ig-7Ce"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqF-Kh-ab3">
+                                <frame key="frameInset" minX="28" minY="583" width="77" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="キャンセル"/>
+                                <connections>
+                                    <segue destination="6WW-Fa-jga" kind="popoverPresentation" popoverAnchorView="WqF-Kh-ab3" id="Uvr-mM-EZH">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -318,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0j-z1-b5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3944.8000000000002" y="3204.6476761619192"/>
+            <point key="canvasLocation" x="2609" y="2976"/>
         </scene>
         <!--CameraTabViewController-->
         <scene sceneID="DYD-uA-HBo">
@@ -347,7 +354,7 @@
                                             <segue destination="JoZ-NW-0Oq" kind="showDetail" id="wjy-1e-t0N"/>
                                         </connections>
                                     </button>
-                                    <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cZL-8B-VXP">
+                                    <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="cZL-8B-VXP">
                                         <frame key="frameInset" minX="18.00%" minY="64" width="64.00%" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <segments>
@@ -589,7 +596,7 @@
         <image name="tabBarItemForAlbumVC" width="8" height="8"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PQ4-XT-GXS"/>
+        <segue reference="Uvr-mM-EZH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.70980392160000005" green="0.16078431369999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
