@@ -1,6 +1,6 @@
 import UIKit
 
-
+//撮影をするーーーーこちらが本番用
 
 
 class ScreenCombineImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
