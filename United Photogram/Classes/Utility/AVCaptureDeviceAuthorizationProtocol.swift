@@ -29,6 +29,7 @@ extension AVCaptureDeviceAuthorizationProtocol {
         let okButtonHandler = { (action: UIAlertAction) -> () in
             if let url = NSURL(string: UIApplicationOpenSettingsURLString) {
                 UIApplication.sharedApplication().openURL(url)
+                //(url)
             }
         }
         // AlertUtility は独自に作成したアラート表示用の便利クラスです。クラスの内容については後述しています。

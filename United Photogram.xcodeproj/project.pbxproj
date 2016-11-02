@@ -11,7 +11,6 @@
 		B0783C12D2279782957588E8 /* Pods_United_Photogram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47EBE3FA9580A6176B8F86E /* Pods_United_Photogram.framework */; };
 		E61397C81DBD31F400D062C3 /* CameraShootingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61397C71DBD31F400D062C3 /* CameraShootingScreenViewController.swift */; };
 		E6148D5D1DA659F600FD8F8F /* DisplayShotPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D591DA659F600FD8F8F /* DisplayShotPhotoViewController.swift */; };
-		E6148D5E1DA659F600FD8F8F /* ScreenCombineImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D5A1DA659F600FD8F8F /* ScreenCombineImageViewController.swift */; };
 		E6148D5F1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */; };
 		E6148D621DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D601DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift */; };
 		E6148D631DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6148D611DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift */; };
@@ -36,8 +35,6 @@
 		E6C8CD921D8FC6DF00E1BDE5 /* United_PhotogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8CD911D8FC6DF00E1BDE5 /* United_PhotogramTests.swift */; };
 		E6C8CD9D1D8FC6DF00E1BDE5 /* United_PhotogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8CD9C1D8FC6DF00E1BDE5 /* United_PhotogramUITests.swift */; };
 		E6C8CDAB1D901FB100E1BDE5 /* FXForms-master in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */; };
-		E6C9EDBF1DC59B6E007E973D /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C9EDBE1DC59B6E007E973D /* dog2.png */; };
-		E6C9EDC71DC5A5CE007E973D /* IMG_6671.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */; };
 		F02239E0964A1964BA2B6B62 /* Pods_United_PhotogramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E2E03B4BCE4644E78FA8C /* Pods_United_PhotogramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +67,6 @@
 		C920CA2A85ED698D39072705 /* Pods-United Photogram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-United Photogram.release.xcconfig"; path = "Pods/Target Support Files/Pods-United Photogram/Pods-United Photogram.release.xcconfig"; sourceTree = "<group>"; };
 		E61397C71DBD31F400D062C3 /* CameraShootingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraShootingScreenViewController.swift; sourceTree = "<group>"; };
 		E6148D591DA659F600FD8F8F /* DisplayShotPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayShotPhotoViewController.swift; sourceTree = "<group>"; };
-		E6148D5A1DA659F600FD8F8F /* ScreenCombineImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenCombineImageViewController.swift; sourceTree = "<group>"; };
 		E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenConfirmCombinedPhotoViewController.swift; sourceTree = "<group>"; };
 		E6148D601DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBackgroundPhotoFromAlbumViewController.swift; sourceTree = "<group>"; };
 		E6148D611DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBackgroundPhotoFromMapViewController.swift; sourceTree = "<group>"; };
@@ -101,8 +97,6 @@
 		E6C8CD9C1D8FC6DF00E1BDE5 /* United_PhotogramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = United_PhotogramUITests.swift; sourceTree = "<group>"; };
 		E6C8CD9E1D8FC6DF00E1BDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FXForms-master"; sourceTree = "<group>"; };
-		E6C9EDBE1DC59B6E007E973D /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
-		E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6671.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				E6C84BBD1DC5B00000966CEB /* IMG_6877.JPG */,
-				E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */,
-				E6C9EDBE1DC59B6E007E973D /* dog2.png */,
 				E6C8CD731D8FC6DE00E1BDE5 /* Classes */,
 				E6C8CD6F1D8FC6DE00E1BDE5 /* Resources */,
 				E6C8CD741D8FC6DE00E1BDE5 /* Supporting Files */,
@@ -238,7 +230,6 @@
 				E61B90B11D9AD96E00C12BFA /* SettingTabViewController.swift */,
 				E66160611DB7079A006037E6 /* SelectionBackgroundViewController.swift */,
 				E6148D591DA659F600FD8F8F /* DisplayShotPhotoViewController.swift */,
-				E6148D5A1DA659F600FD8F8F /* ScreenCombineImageViewController.swift */,
 				E6148D5B1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift */,
 			);
 			path = Controller;
@@ -440,9 +431,7 @@
 				E6C84BBE1DC5B00000966CEB /* IMG_6877.JPG in Resources */,
 				E6C8CD761D8FC6DE00E1BDE5 /* setup.sh in Resources */,
 				E6C8CD721D8FC6DE00E1BDE5 /* Assets.xcassets in Resources */,
-				E6C9EDC71DC5A5CE007E973D /* IMG_6671.png in Resources */,
 				E618C7831DC49ABB00BC6BCA /* Main.storyboard in Resources */,
-				E6C9EDBF1DC59B6E007E973D /* dog2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,7 +597,6 @@
 				E661605A1DAE5A58006037E6 /* Camera.swift in Sources */,
 				E61B90B41D9AD96E00C12BFA /* SettingTabViewController.swift in Sources */,
 				E66160591DAE5A58006037E6 /* AlertGetPermit.swift in Sources */,
-				E6148D5E1DA659F600FD8F8F /* ScreenCombineImageViewController.swift in Sources */,
 				E6148D5F1DA659F600FD8F8F /* ScreenConfirmCombinedPhotoViewController.swift in Sources */,
 				E618FBCF1DC30981001FD4F9 /* AlertUtility.swift in Sources */,
 				E6C8CD871D8FC6DE00E1BDE5 /* AppDelegate.swift in Sources */,
@@ -698,10 +686,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos10.0;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -740,9 +728,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos10.0;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
