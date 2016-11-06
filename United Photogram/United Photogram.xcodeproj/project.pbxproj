@@ -38,6 +38,7 @@
 		E6C8CDAB1D901FB100E1BDE5 /* FXForms-master in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */; };
 		E6C9EDBF1DC59B6E007E973D /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C9EDBE1DC59B6E007E973D /* dog2.png */; };
 		E6C9EDC71DC5A5CE007E973D /* IMG_6671.png in Resources */ = {isa = PBXBuildFile; fileRef = E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */; };
+		E6D1C8581DCF0471003893E3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D1C8571DCF0471003893E3 /* MapKit.framework */; };
 		F02239E0964A1964BA2B6B62 /* Pods_United_PhotogramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E2E03B4BCE4644E78FA8C /* Pods_United_PhotogramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FXForms-master"; sourceTree = "<group>"; };
 		E6C9EDBE1DC59B6E007E973D /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
 		E6C9EDC61DC5A5CE007E973D /* IMG_6671.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6671.png; sourceTree = "<group>"; };
+		E6D1C8571DCF0471003893E3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C8CDAB1D901FB100E1BDE5 /* FXForms-master in Frameworks */,
+				E6D1C8581DCF0471003893E3 /* MapKit.framework in Frameworks */,
 				B0783C12D2279782957588E8 /* Pods_United_Photogram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +140,7 @@
 		61638D701298DFE7E57B4A62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6D1C8571DCF0471003893E3 /* MapKit.framework */,
 				E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */,
 				C47EBE3FA9580A6176B8F86E /* Pods_United_Photogram.framework */,
 				1635C03A9ADC9F9609628096 /* Pods_United_PhotogramTests.framework */,
@@ -399,6 +403,11 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = VTFR494599;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					E6C8CD8C1D8FC6DE00E1BDE5 = {
 						CreatedOnToolsVersion = 7.3.1;
