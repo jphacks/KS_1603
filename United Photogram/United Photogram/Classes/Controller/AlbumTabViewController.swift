@@ -7,6 +7,12 @@ class AlbumTabViewController: UIViewController{
     
    
     @IBOutlet weak var DisplayPhotoTableView: UITableView!
+    
+    let imageNames = ["dog.png","dog2.png","IMG_6671.png","IMG_6877.png"]
+    let imageTitles = ["犬１","犬2","写真１", "写真2"]
+    let imageDescriptions = ["犬の一枚めの画像","犬の2枚めの画像","写真1枚めです","それの2枚めです"]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        DisplayPhotoTableView.registerNib(UITableViewCell.self(NSObject), forCellReuseIdentifier: "Cell")
@@ -19,27 +25,28 @@ class AlbumTabViewController: UIViewController{
 
 }
 
-//テーブル
-//セクションは１つでいい
-extension AlbumTabViewController: UITableViewDataSource {
+/*
+ *tableView実装------ sectionの数 --
+ */
+extension AlbumTabViewController: UITableViewDataSource{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return imageNames.count
     }
-    
+}
+
+
+/*
+ *tableView実装------ cellの中身--
+ */
+extension AlbumTabViewController: UITableViewDelegate{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("albumCell", forIndexPath: indexPath)
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("albumViewCell") as! AlbumViewCell
+        cell.setCell(imageNames[indexPath.row], titleText: imageTitles[indexPath.row], DescriptionText: imageDescriptions[indexPath.row])
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let text = imageTitles[indexPath.row]
+        print(text)
+    }
 }
-
-//Cellの中にアプリで撮影した写真をいれて表示
-//extension AlbumTabViewController: UITableViewDelegate{
-//    
-////    @objc(tableView:cellForRowAtIndexPath:) private func tableView(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-////        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-////        //cellの内容を得る
-////        return cell
-//  //  }
-//}
