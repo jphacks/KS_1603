@@ -35,6 +35,10 @@
 		E6C8CD921D8FC6DF00E1BDE5 /* United_PhotogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8CD911D8FC6DF00E1BDE5 /* United_PhotogramTests.swift */; };
 		E6C8CD9D1D8FC6DF00E1BDE5 /* United_PhotogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8CD9C1D8FC6DF00E1BDE5 /* United_PhotogramUITests.swift */; };
 		E6C8CDAB1D901FB100E1BDE5 /* FXForms-master in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */; };
+		E6E5A2CF1DCA5A2E00A77BB7 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E5A2CC1DCA5A2E00A77BB7 /* dog.png */; };
+		E6E5A2D01DCA5A2E00A77BB7 /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E5A2CD1DCA5A2E00A77BB7 /* dog2.png */; };
+		E6E5A2D11DCA5A2E00A77BB7 /* IMG_6671.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E5A2CE1DCA5A2E00A77BB7 /* IMG_6671.png */; };
+		E6E5A2D31DCA5CBE00A77BB7 /* AlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5A2D21DCA5CBE00A77BB7 /* AlbumViewCell.swift */; };
 		F02239E0964A1964BA2B6B62 /* Pods_United_PhotogramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E2E03B4BCE4644E78FA8C /* Pods_United_PhotogramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +101,10 @@
 		E6C8CD9C1D8FC6DF00E1BDE5 /* United_PhotogramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = United_PhotogramUITests.swift; sourceTree = "<group>"; };
 		E6C8CD9E1D8FC6DF00E1BDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C8CDAA1D901FB100E1BDE5 /* FXForms-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FXForms-master"; sourceTree = "<group>"; };
+		E6E5A2CC1DCA5A2E00A77BB7 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		E6E5A2CD1DCA5A2E00A77BB7 /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
+		E6E5A2CE1DCA5A2E00A77BB7 /* IMG_6671.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6671.png; sourceTree = "<group>"; };
+		E6E5A2D21DCA5CBE00A77BB7 /* AlbumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +172,9 @@
 		E6C8CD6E1D8FC6DE00E1BDE5 /* United Photogram */ = {
 			isa = PBXGroup;
 			children = (
+				E6E5A2CC1DCA5A2E00A77BB7 /* dog.png */,
+				E6E5A2CD1DCA5A2E00A77BB7 /* dog2.png */,
+				E6E5A2CE1DCA5A2E00A77BB7 /* IMG_6671.png */,
 				E6C84BBD1DC5B00000966CEB /* IMG_6877.JPG */,
 				E6C8CD731D8FC6DE00E1BDE5 /* Classes */,
 				E6C8CD6F1D8FC6DE00E1BDE5 /* Resources */,
@@ -273,6 +284,7 @@
 		E6C8CD831D8FC6DE00E1BDE5 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E6E5A2D21DCA5CBE00A77BB7 /* AlbumViewCell.swift */,
 				E618FBD01DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift */,
 				E618FBD11DC30BBA001FD4F9 /* AVCaptureDeviceAuthorizationProtocol.swift */,
 				E618FBCE1DC30981001FD4F9 /* AlertUtility.swift */,
@@ -427,11 +439,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E5A2CF1DCA5A2E00A77BB7 /* dog.png in Resources */,
 				E6C8CD791D8FC6DE00E1BDE5 /* LaunchScreen.storyboard in Resources */,
+				E6E5A2D01DCA5A2E00A77BB7 /* dog2.png in Resources */,
 				E6C84BBE1DC5B00000966CEB /* IMG_6877.JPG in Resources */,
 				E6C8CD761D8FC6DE00E1BDE5 /* setup.sh in Resources */,
 				E6C8CD721D8FC6DE00E1BDE5 /* Assets.xcassets in Resources */,
 				E618C7831DC49ABB00BC6BCA /* Main.storyboard in Resources */,
+				E6E5A2D11DCA5A2E00A77BB7 /* IMG_6671.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +619,7 @@
 				E6C8CD851D8FC6DE00E1BDE5 /* United_PhotogramEnumerations.swift in Sources */,
 				E61B90B31D9AD96E00C12BFA /* CameraTabViewController.swift in Sources */,
 				E6C8CD821D8FC6DE00E1BDE5 /* United_Photogram.swift in Sources */,
+				E6E5A2D31DCA5CBE00A77BB7 /* AlbumViewCell.swift in Sources */,
 				E618FBD21DC30BBA001FD4F9 /* ALAssetsLibraryAuthorizationProtocol.swift in Sources */,
 				E6148D621DA7F8AB00FD8F8F /* ChooseBackgroundPhotoFromAlbumViewController.swift in Sources */,
 				E66160621DB7079A006037E6 /* SelectionBackgroundViewController.swift in Sources */,
