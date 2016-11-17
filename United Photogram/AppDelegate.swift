@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let cGoogleMapsAPIKey = "AIzaSyDPvP5m4kZfCsnWqXa12782yB7GWJtB1x0"
     
+    
+    //設定画面の設定などの保存に使うのが良い
+    //大容量には向かない
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
 

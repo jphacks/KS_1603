@@ -53,7 +53,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QGf-FY-MR4" id="1vA-xl-gdI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="oNq-yz-XUz">
@@ -145,14 +145,6 @@
                                     <action selector="btnPushed:" destination="62n-d9-uVT" eventType="touchUpInside" id="za9-ua-VGF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pzf-vc-9au">
-                                <rect key="frame" x="245" y="627" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="表示"/>
-                                <connections>
-                                    <action selector="screenPhoto:" destination="62n-d9-uVT" eventType="touchUpInside" id="Xcs-aX-I5W"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -163,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0j-z1-b5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-183.5" y="3344.5"/>
+            <point key="canvasLocation" x="-185" y="3278"/>
         </scene>
         <!--CameraTabViewController-->
         <scene sceneID="DYD-uA-HBo">
@@ -262,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfl-Lk-vBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="4799"/>
+            <point key="canvasLocation" x="433" y="4261"/>
         </scene>
         <!--Choose Background Photo From Map View Controller-->
         <scene sceneID="HJL-fO-ZA0">
@@ -282,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bA4-GR-dlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184" y="4092"/>
+            <point key="canvasLocation" x="-185" y="4075"/>
         </scene>
         <!--Setting-->
         <scene sceneID="W4h-ha-3Jc">
@@ -377,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNa-Mk-bhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-819" y="4261"/>
+            <point key="canvasLocation" x="-820" y="4137"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="53t-Cu-6QJ">

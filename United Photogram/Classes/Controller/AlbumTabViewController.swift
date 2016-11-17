@@ -7,7 +7,7 @@ class AlbumTabViewController: UIViewController{
     
     @IBOutlet weak var DisplayPhotoTableView: UITableView!
     
-    let photoModel = PhotoModel.sharedInstacne
+    let photoModel = PhotoModel.sharedInstance
     
     var imageNames = ["dog.png","dog2.png","IMG_6671.png","IMG_6877.png"]
     var imageTitles = ["2016/11/8","2016/11/1","2016/10/20", "2016/10/10"]
@@ -34,13 +34,15 @@ class AlbumTabViewController: UIViewController{
  */
 
 extension AlbumTabViewController{
+    
     func refresh(){
             // UserDefaultsから画像が取得出来た場合ImageViewのimageに設定
-            imageNames.insert("IMG_6877.JPG", atIndex: 0)
-            imageTitles.insert(getDate(), atIndex: 0)
-            imageDescriptions.insert("データの読み込みテスト", atIndex: 0)
-            print("更新をしました。")
-         self.DisplayPhotoTableView.reloadData()
+//            imageNames.insert("IMG_6877.JPG", atIndex: 0)
+//            imageTitles.insert(getDate(), atIndex: 0)
+//            imageDescriptions.insert("データの読み込みテスト", atIndex: 0)
+        
+        self.DisplayPhotoTableView.reloadData()
+        print("更新をしました。")
         refreshControl.endRefreshing()
     }
     
@@ -76,12 +78,12 @@ extension AlbumTabViewController: UITableViewDelegate{
         let cell = tableView.dequeueReusableCellWithIdentifier("albumViewCell") as! AlbumViewCell
         
         cell.setCell(photoModel.photos[indexPath.row].image, titleText: "a", DescriptionText: "fejp")
-        cell.photoDescription.text = "unko"
-//        cell.photoImage = UIImage(named: PhotoModel.sharedInstacne.photos[indexPath.row].image)
-//        let data = self.delegate.
-//        let image = UIImage(data: )
-//        cell.photoImage.image = image
-//        cell.setCell(imageNames[indexPath.row], titleText: imageTitles[indexPath.row], DescriptionText: imageDescriptions[indexPath.row])
+        cell.photoDescription.text = "yeahhh"
+        cell.photoTitle.text = getDate()
+        if cell.photoImage.image == nil{
+            print("errrrr")
+        }
+//        cell.photoImage.image = UIImage(named: "dog2.png")
         return cell
     }
     

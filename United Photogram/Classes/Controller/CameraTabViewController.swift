@@ -26,8 +26,7 @@ class CameraTabViewController: UIViewController{
 
 /*
  *  機能拡張
- *
- */
+ 
 extension CameraTabViewController{
     func switchView(identifier: String){
         let newViewController = self.storyboard?.instantiateViewControllerWithIdentifier(identifier)
@@ -63,4 +62,5 @@ extension CameraTabViewController{
             newViewController.didMoveToParentViewController(self)
         })
     }
-}
+} 
+ */

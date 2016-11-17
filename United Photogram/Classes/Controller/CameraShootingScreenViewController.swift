@@ -8,28 +8,33 @@ class CameraShootingScreenViewController: UIViewController{
     
     @IBOutlet weak var cameraImgView: UIImageView!
     let stamp = UIImage(named: "IMG_6877.JPG")
- //   var delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     //----「撮影」ボタンが押された時の動作
     @IBAction func btnPushed(sender: AnyObject) {
         shooting()
     }
+//    //----表示
+//    @IBAction func screenPhoto(sender: AnyObject) {
+//            print("画像の表示完了")
+//    }
     
-    @IBAction func screenPhoto(sender: AnyObject) {
-            print("画像の表示完了")
-    }
     
-    @IBAction func savePhoto(sender: AnyObject) {//保存ボタンを押したときの処理
+    //------写真の保存
+    @IBAction func savePhoto(sender: AnyObject) {
         if let image = cameraImgView.image {
-            let imageData = UIImageJPEGRepresentation(image, 1);
+            let fileData = UIImageJPEGRepresentation(image, 1)
+            let fileName = "photo"
+            let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+            let filePath = "\(documentsPath)/\(fileName)"
+            fileData!.writeToFile(filePath, atomically: true)
             print("保存完了")
-            
+            PhotoModel.addPhoto(filePath)
         }
-        PhotoModel.addPhoto("FilePathをここに書く")
-
-        //self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    
+    //キャンセル
     @IBAction func cancel(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }

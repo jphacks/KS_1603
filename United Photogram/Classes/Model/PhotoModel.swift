@@ -9,14 +9,14 @@
 import Foundation
 
 class PhotoModel: NSObject {
-    static let sharedInstacne = PhotoModel()
+    static let sharedInstance = PhotoModel()
     var photos = [Photo]()
     
     // api connect
     static func addPhoto(filePath:String){
         let photo = Photo()
         photo.image = filePath
-        sharedInstacne.photos.append(photo)
+        sharedInstance.photos.append(photo)
     }
     
     // db

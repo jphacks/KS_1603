@@ -33,8 +33,9 @@ class AlbumViewCell: UITableViewCell {
  *機能拡張-----
  */
 extension AlbumViewCell{
+    
     func setCell(imageName: String, titleText: String, DescriptionText: String){
-        photoImage.image = UIImage(named: imageName)
+        photoImage.image = UIImage(contentsOfFile: imageName)
         photoTitle.text = titleText
         photoDescription.text = DescriptionText
     }
