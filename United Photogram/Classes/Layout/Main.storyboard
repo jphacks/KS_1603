@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fpg-fd-ukQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653.5" y="2368.5"/>
+            <point key="canvasLocation" x="-818" y="2487"/>
         </scene>
         <!--Camera Shooting Screen View Controller-->
         <scene sceneID="9cg-mI-pWU">
@@ -112,20 +112,45 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="506"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1ht-rb-xpL">
-                                <rect key="frame" x="172" y="583" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WqF-Kh-ab3">
+                                <rect key="frame" x="30" y="577" width="86" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="撮影"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.25882352939999997" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="キャンセル">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="62n-d9-uVT" eventType="touchUpInside" id="blW-0W-hw1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6FL-dX-me8">
+                                <rect key="frame" x="275" y="577" width="71" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.25882352939999997" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePhoto:" destination="62n-d9-uVT" eventType="touchUpInside" id="w3a-Yh-bQH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1ht-rb-xpL">
+                                <rect key="frame" x="151" y="577" width="90" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.25882352939999997" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="撮影開始">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="btnPushed:" destination="62n-d9-uVT" eventType="touchUpInside" id="za9-ua-VGF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WqF-Kh-ab3">
-                                <rect key="frame" x="28" y="583" width="77" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pzf-vc-9au">
+                                <rect key="frame" x="245" y="627" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="キャンセル"/>
+                                <state key="normal" title="表示"/>
                                 <connections>
-                                    <action selector="cancel:" destination="62n-d9-uVT" eventType="touchUpInside" id="blW-0W-hw1"/>
+                                    <action selector="screenPhoto:" destination="62n-d9-uVT" eventType="touchUpInside" id="Xcs-aX-I5W"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -138,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0j-z1-b5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="3345"/>
+            <point key="canvasLocation" x="-183.5" y="3344.5"/>
         </scene>
         <!--CameraTabViewController-->
         <scene sceneID="DYD-uA-HBo">
@@ -153,7 +178,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TRV-h7-YdX">
-                                        <rect key="frame" x="303" y="26" width="57" height="36"/>
+                                        <rect key="frame" x="310" y="25" width="57" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="次へ＞">
@@ -164,7 +189,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="背景の選択" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ltJ-Vg-US6">
-                                        <rect key="frame" x="128" y="24" width="118" height="38"/>
+                                        <rect key="frame" x="133" y="23" width="109" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -192,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhg-eW-hvx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170.5" y="3422.5"/>
+            <point key="canvasLocation" x="-819" y="3278"/>
         </scene>
         <!--Choose Background Photo From Album View Controller-->
         <scene sceneID="ghQ-wZ-Zb8">
@@ -237,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfl-Lk-vBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="384" y="4224"/>
+            <point key="canvasLocation" x="291" y="4799"/>
         </scene>
         <!--Choose Background Photo From Map View Controller-->
         <scene sceneID="HJL-fO-ZA0">
@@ -257,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bA4-GR-dlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="787" y="4148"/>
+            <point key="canvasLocation" x="-184" y="4092"/>
         </scene>
         <!--Setting-->
         <scene sceneID="W4h-ha-3Jc">
@@ -286,7 +311,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="1JM-kv-Q1B">
@@ -310,14 +335,14 @@
                                         <rect key="frame" x="29" y="34" width="55" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オブジェクト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jcW-K6-ZfY">
                                         <rect key="frame" x="29" y="84" width="102" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="NkT-U6-eEc">
@@ -334,7 +359,7 @@
                                         <rect key="frame" x="29" y="131" width="51" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -352,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNa-Mk-bhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-419.5" y="3433.5"/>
+            <point key="canvasLocation" x="-819" y="4261"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="53t-Cu-6QJ">
@@ -372,7 +397,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvX-YL-rL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-153.75" y="2235.5616666666665"/>
+            <point key="canvasLocation" x="-1686" y="3134"/>
         </scene>
     </scenes>
     <resources>

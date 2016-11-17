@@ -1,4 +1,5 @@
 //iPhone アルバム内の写真の取得をするcollectionviewの画面
+//使用しない
 
 import UIKit
 import Photos
