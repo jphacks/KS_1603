@@ -23,7 +23,7 @@ class ChooseBackgroundPhotoFromMapViewController: UIViewController{
 
 
 /*
- *機能拡張--
+ *Map
  */
 extension ChooseBackgroundPhotoFromMapViewController:CLLocationManagerDelegate{
     

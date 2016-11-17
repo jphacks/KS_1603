@@ -8,7 +8,7 @@ class CameraShootingScreenViewController: UIViewController{
     
     @IBOutlet weak var cameraImgView: UIImageView!
     let stamp = UIImage(named: "IMG_6877.JPG")
-    var delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+ //   var delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     //----「撮影」ボタンが押された時の動作
     @IBAction func btnPushed(sender: AnyObject) {
@@ -16,20 +16,17 @@ class CameraShootingScreenViewController: UIViewController{
     }
     
     @IBAction func screenPhoto(sender: AnyObject) {
-        if let imageData = self.delegate.userDefaults.objectForKey("imageData") as? NSData, image = UIImage(data: imageData) {
-            // UserDefaultsから画像が取得出来た場合ImageViewのimageに設定
-            cameraImgView.image = image
             print("画像の表示完了")
-        }
     }
     
     @IBAction func savePhoto(sender: AnyObject) {//保存ボタンを押したときの処理
         if let image = cameraImgView.image {
             let imageData = UIImageJPEGRepresentation(image, 1);
-            self.delegate.userDefaults.setObject(imageData, forKey: "imageData")
-            self.delegate.userDefaults.synchronize()
             print("保存完了")
+            
         }
+        PhotoModel.addPhoto("FilePathをここに書く")
+
         //self.dismissViewControllerAnimated(true, completion: nil)
     }
     
