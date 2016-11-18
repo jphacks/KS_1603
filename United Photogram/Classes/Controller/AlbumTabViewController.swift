@@ -46,6 +46,7 @@ extension AlbumTabViewController{
         refreshControl.endRefreshing()
     }
     
+    
     func getDate() ->String{
         let now = NSDate() // 現在日時の取得
         
@@ -81,7 +82,7 @@ extension AlbumTabViewController: UITableViewDelegate{
         cell.photoDescription.text = "yeahhh"
         cell.photoTitle.text = getDate()
         if cell.photoImage.image == nil{
-            print("errrrr")
+            print("errrrrr")
         }
 //        cell.photoImage.image = UIImage(named: "dog2.png")
         return cell

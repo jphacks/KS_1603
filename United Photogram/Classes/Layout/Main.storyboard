@@ -53,7 +53,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QGf-FY-MR4" id="1vA-xl-gdI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="oNq-yz-XUz">
@@ -91,7 +91,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Album" image="tabBarItemForAlbumVC" id="9us-uq-D9b"/>
+                    <tabBarItem key="tabBarItem" title="アルバム" image="albumIcon2-50" id="9us-uq-D9b"/>
                     <connections>
                         <outlet property="DisplayPhotoTableView" destination="t8e-IB-cdi" id="W3G-gq-saz"/>
                     </connections>
@@ -200,7 +200,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" id="Tw2-fP-v9C"/>
+                    <tabBarItem key="tabBarItem" title="カメラ" image="cameraIcon-50" id="Tw2-fP-v9C"/>
                     <navigationItem key="navigationItem" id="ITr-DV-1uH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -276,7 +276,7 @@
             </objects>
             <point key="canvasLocation" x="-185" y="4075"/>
         </scene>
-        <!--Setting-->
+        <!--設定-->
         <scene sceneID="W4h-ha-3Jc">
             <objects>
                 <viewController id="0np-VO-x8K" customClass="SettingTabViewController" customModule="United_Photogram" customModuleProvider="target" sceneMemberID="viewController">
@@ -365,11 +365,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Setting" id="fPH-bw-MpU"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="settingIcon-50" id="fPH-bw-MpU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNa-Mk-bhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-820" y="4137"/>
+            <point key="canvasLocation" x="-820" y="4193"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="53t-Cu-6QJ">
@@ -393,7 +393,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tabBarItemForAlbumVC" width="8" height="8"/>
+        <image name="albumIcon2-50" width="24" height="24"/>
+        <image name="cameraIcon-50" width="24" height="24"/>
+        <image name="settingIcon-50" width="24" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

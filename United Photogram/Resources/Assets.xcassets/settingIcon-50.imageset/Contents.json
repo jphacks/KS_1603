@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "tabbar_item_album.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "settingIcon-50@2x.png",
       "scale" : "2x"
     },
     {
