@@ -53,7 +53,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QGf-FY-MR4" id="1vA-xl-gdI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="oNq-yz-XUz">
@@ -103,15 +103,11 @@
         <!--Camera Shooting Screen View Controller-->
         <scene sceneID="9cg-mI-pWU">
             <objects>
-                <viewController id="62n-d9-uVT" customClass="CameraShootingScreenViewController" customModule="United_Photogram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shoot" useStoryboardIdentifierAsRestorationIdentifier="YES" id="62n-d9-uVT" customClass="CameraShootingScreenViewController" customModule="United_Photogram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2Z-mf-QA1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Big-f0-Uzc">
-                                <rect key="frame" x="0.0" y="28" width="375" height="506"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WqF-Kh-ab3">
                                 <rect key="frame" x="30" y="577" width="86" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -127,7 +123,7 @@
                                 <rect key="frame" x="275" y="577" width="71" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.25882352939999997" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="保存">
+                                <state key="normal" title="編集する">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -145,6 +141,10 @@
                                     <action selector="btnPushed:" destination="62n-d9-uVT" eventType="touchUpInside" id="za9-ua-VGF"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Big-f0-Uzc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -177,6 +177,7 @@
                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="nextView:" destination="6WW-Fa-jga" eventType="touchUpInside" id="bkW-KL-sM4"/>
                                             <segue destination="62n-d9-uVT" kind="modal" id="5ha-ks-suR"/>
                                         </connections>
                                     </button>
@@ -404,6 +405,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvX-YL-rL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1686" y="3134"/>
+        </scene>
+        <!--Poisson Swift-->
+        <scene sceneID="jlc-Uc-0l5">
+            <objects>
+                <viewController storyboardIdentifier="poissonVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g5e-b3-9fh" customClass="Poisson_Swift" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZb-zA-j5t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="tnm-0z-uKc">
+                                <rect key="frame" x="0.0" y="94" width="375" height="521"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="plP-P8-RqG">
+                                <rect key="frame" x="286" y="31" width="46" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.25882352939999997" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="完了">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="completeUnite:" destination="g5e-b3-9fh" eventType="touchUpInside" id="DnC-Ja-VR5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="UnitedPhoto" destination="tnm-0z-uKc" id="dd5-K3-dJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enS-IG-6a4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.5" y="3277.5"/>
+        </scene>
+        <!--Paint Controller-->
+        <scene sceneID="rbA-Dn-i0s">
+            <objects>
+                <viewController storyboardIdentifier="draw" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uNh-UK-i24" customClass="PaintController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rS7-1t-c8C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Grh-p5-rRq">
+                                <rect key="frame" x="125" y="586" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="復元"/>
+                                <connections>
+                                    <action selector="redoBtnPressed:" destination="uNh-UK-i24" eventType="touchUpInside" id="pRV-c7-jNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4qW-GE-rn1">
+                                <rect key="frame" x="61" y="586" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="undoBtnPressed:" destination="uNh-UK-i24" eventType="touchUpInside" id="gG2-iv-COW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b1d-VV-dFh">
+                                <rect key="frame" x="204" y="586" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="クリア"/>
+                                <connections>
+                                    <action selector="clearBtnPressed:" destination="uNh-UK-i24" eventType="touchUpInside" id="hgK-AQ-UPT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9rw-uo-JCE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ugC-0J-gA1">
+                                <rect key="frame" x="280" y="586" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="合成開始"/>
+                                <connections>
+                                    <action selector="pushBtnPressed:" destination="uNh-UK-i24" eventType="touchUpInside" id="2QU-8D-biS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="canvas" destination="9rw-uo-JCE" id="iGt-Xq-wcm"/>
+                        <outlet property="clearBtn" destination="b1d-VV-dFh" id="kSw-if-dgP"/>
+                        <outlet property="pushBtn" destination="ugC-0J-gA1" id="xUO-x6-vR8"/>
+                        <outlet property="redoBtn" destination="Grh-p5-rRq" id="cPp-HB-Ino"/>
+                        <outlet property="undoBtn" destination="4qW-GE-rn1" id="Nak-f5-WRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thn-gZ-rUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375.5" y="3277.5"/>
         </scene>
     </scenes>
     <resources>

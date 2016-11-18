@@ -8,7 +8,13 @@ class CameraTabViewController: UIViewController{
     @IBOutlet weak var containerView: UIView!
     weak var currentViewController: UIViewController?
    
+    let backgroundImage = UIImage(named: "スキャン.png")
     
+    @IBAction func nextView(sender: AnyObject) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewControllerWithIdentifier("shoot") as! CameraShootingScreenViewController
+        nextView.bgimage = backgroundImage
+    }
     override func viewDidLoad() {
 //        self.currentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("albumView")
 //        self.currentViewController!.view.translatesAutoresizingMaskIntoConstraints = false
@@ -21,6 +27,7 @@ class CameraTabViewController: UIViewController{
         super.didReceiveMemoryWarning()
     }
 }
+
 
 
 

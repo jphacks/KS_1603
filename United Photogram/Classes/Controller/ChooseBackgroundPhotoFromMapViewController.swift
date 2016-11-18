@@ -65,8 +65,8 @@ extension ChooseBackgroundPhotoFromMapViewController{
     func createPin(mapView: GMSMapView, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
         let  position = CLLocationCoordinate2DMake(latitude, longitude)
         let marker = GMSMarker(position: position)
-        marker.title = "犬の写真"
-        marker.icon = setPicture()
+        marker.title = "2001/7/6"
+        marker.icon = setPicture(UIImage(named: "スキャン.png"))
         marker.snippet = "飯塚市川津680-4"
         marker.map = mapView
     }
@@ -84,9 +84,10 @@ extension ChooseBackgroundPhotoFromMapViewController{
 
     }
 
-    func setPicture() -> UIImage{
+    
+    func setPicture(image: UIImage!) -> UIImage{
         //iPhone自体の写真を持ってくる
-        let iconPic = UIImage(named: "dog.png")!
+        let iconPic = image
         
         //--サイズの変更
         let t = 60.0
