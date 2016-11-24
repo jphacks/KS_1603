@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     // ベース（合成先）画像のピクセル値を取得
-//    UIImage *baseImage = [UIImage imageNamed:@"hand.png"];
+//    UIImage *baseImage = [UIImage imageNamed:@"IMG_6671.png"];
     CGImageRef baseCGImage = _baseImage.CGImage;
     size_t baseBytesPerRow = CGImageGetBytesPerRow(baseCGImage);
     CGDataProviderRef baseDataProvider = CGImageGetDataProvider(baseCGImage);
@@ -113,7 +113,7 @@
         
         // 収束判定
         double epsilon = dx/absx;
-        if(!epsilon || previous_epsilon-epsilon == 0.0) break;
+        if(!epsilon || previous_epsilon-epsilon <= 0.05) break;
         else previous_epsilon = epsilon;
     } while(true);
     
@@ -133,9 +133,13 @@
     
     UIImage *resultImage = [UIImage imageWithCGImage:resultCGImage];
     
+//    UIImage *hamekomiGazo = [UIImage imageNamed:@"ajjdfas.png"];
+    
     UIImageView *iv = [[UIImageView alloc] initWithImage:resultImage];
     
-    [self.view addSubview:iv];
+    iv.image = resultImage;
+    
+    [self.UnitedPhoto addSubview:iv];
     
     
     

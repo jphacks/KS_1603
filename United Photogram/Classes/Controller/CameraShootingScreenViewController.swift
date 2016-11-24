@@ -7,7 +7,8 @@ import UIKit
 class CameraShootingScreenViewController: UIViewController{
     
     @IBOutlet weak var cameraImgView: UIImageView!
-    let stamp = UIImage(named: "IMG_6877.JPG")
+    let stamp = UIImage(named: "スキャン2.png")
+    let stamee = UIImage(named: "ajjdfas.png")
     var bgimage: UIImage!
     
     //----「撮影」ボタンが押された時の動作
@@ -20,7 +21,7 @@ class CameraShootingScreenViewController: UIViewController{
 //    }
     
     
-    //------写真の編集
+    //------編集ボタン
     @IBAction func savePhoto(sender: AnyObject) {
         let objectImg = cameraImgView.image
 //        let backgroundImg = cameraImgView.subviews
@@ -96,13 +97,13 @@ extension CameraShootingScreenViewController:UIImagePickerControllerDelegate{
  */
 extension CameraShootingScreenViewController:UINavigationControllerDelegate{
 
-    //----画像の保存の処理の処理
+    //----撮影した画像の表示
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         let stampViews = cameraImgView.subviews
         for stampView in stampViews {
             stampView.removeFromSuperview()
         }
-        cameraImgView.image = image
+        cameraImgView.image = stamee
         let haikei = UIImageView(image: stamp)
         haikei.alpha = 0.5
         //haikei.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.height/2)
